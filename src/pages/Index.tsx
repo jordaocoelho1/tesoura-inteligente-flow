@@ -17,23 +17,23 @@ import {
 const Index = () => {
   return (
     <SidebarProvider>
-      <div className="min-h-screen flex w-full bg-gradient-barbershop">
+      <div className="min-h-screen flex w-full bg-barbershop-black">
         <AppSidebar />
         
         <div className="flex-1 flex flex-col">
           {/* Header */}
-          <header className="h-16 bg-barbershop-black/50 backdrop-blur-md border-b border-barbershop-gray-800 flex items-center justify-between px-6">
+          <header className="h-16 bg-barbershop-gray-900 border-b border-barbershop-gray-700 flex items-center justify-between px-6">
             <div className="flex items-center gap-4">
               <SidebarTrigger className="text-barbershop-gold hover:text-barbershop-gold-light" />
               <div>
-                <h1 className="text-2xl font-bold text-white">Dashboard</h1>
-                <p className="text-barbershop-gray-400 text-sm">Visão geral do seu negócio</p>
+                <h1 className="text-2xl font-bold text-barbershop-gold">Dashboard</h1>
+                <p className="text-barbershop-gray-300 text-sm">Visão geral do seu negócio</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
               <div className="text-right">
-                <p className="text-white font-medium">Barbearia Premium</p>
-                <p className="text-barbershop-gray-400 text-sm">
+                <p className="text-barbershop-gold font-medium">Barbearia Premium</p>
+                <p className="text-barbershop-gray-300 text-sm">
                   {new Date().toLocaleDateString('pt-BR', { 
                     weekday: 'long', 
                     year: 'numeric', 
@@ -46,7 +46,7 @@ const Index = () => {
           </header>
 
           {/* Main Content */}
-          <main className="flex-1 p-6 space-y-6">
+          <main className="flex-1 p-6 space-y-6 bg-barbershop-gray-900">
             {/* Stats Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <StatCard

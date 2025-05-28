@@ -20,7 +20,7 @@ export function RevenueChart() {
   ];
 
   return (
-    <Card className="glass-card animate-fade-in">
+    <Card className="bg-barbershop-gray-800 border-barbershop-gray-700 animate-fade-in shadow-lg">
       <CardHeader>
         <CardTitle className="text-barbershop-gold flex items-center gap-2">
           <TrendingUp className="w-5 h-5" />
@@ -31,7 +31,7 @@ export function RevenueChart() {
         <div className="h-80">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={data}>
-              <CartesianGrid strokeDasharray="3 3" stroke="#404040" />
+              <CartesianGrid strokeDasharray="3 3" stroke="#525252" />
               <XAxis 
                 dataKey="month" 
                 stroke="#D4AF37"
@@ -44,7 +44,7 @@ export function RevenueChart() {
               />
               <Tooltip
                 contentStyle={{
-                  backgroundColor: '#171717',
+                  backgroundColor: '#404040',
                   border: '1px solid #D4AF37',
                   borderRadius: '8px',
                   color: '#fff'

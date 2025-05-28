@@ -15,18 +15,18 @@ interface StatCardProps {
 
 export function StatCard({ title, value, icon: Icon, trend, description }: StatCardProps) {
   return (
-    <Card className="glass-card hover:scale-105 transition-all duration-300 animate-fade-in">
+    <Card className="bg-barbershop-gray-800 border-barbershop-gray-700 hover:bg-barbershop-gray-700 hover:scale-105 transition-all duration-300 animate-fade-in shadow-lg">
       <CardContent className="p-6">
         <div className="flex items-center justify-between">
           <div className="flex-1">
-            <p className="text-barbershop-gray-100 text-sm font-medium mb-1">
+            <p className="text-barbershop-gray-300 text-sm font-medium mb-1">
               {title}
             </p>
-            <p className="text-3xl font-bold text-white mb-2">
+            <p className="text-3xl font-bold text-barbershop-gold mb-2">
               {value}
             </p>
             {description && (
-              <p className="text-barbershop-gray-300 text-xs">
+              <p className="text-barbershop-gray-400 text-xs">
                 {description}
               </p>
             )}
@@ -44,7 +44,7 @@ export function StatCard({ title, value, icon: Icon, trend, description }: StatC
             )}
           </div>
           <div className="ml-4">
-            <div className="w-12 h-12 bg-gradient-gold rounded-lg flex items-center justify-center">
+            <div className="w-12 h-12 bg-gradient-gold rounded-lg flex items-center justify-center shadow-md">
               <Icon className="w-6 h-6 text-barbershop-black" />
             </div>
           </div>

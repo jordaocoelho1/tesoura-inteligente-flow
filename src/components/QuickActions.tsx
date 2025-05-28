@@ -32,7 +32,7 @@ export function QuickActions() {
   ];
 
   return (
-    <Card className="glass-card animate-fade-in">
+    <Card className="bg-barbershop-gray-800 border-barbershop-gray-700 animate-fade-in shadow-lg">
       <CardHeader>
         <CardTitle className="text-barbershop-gold flex items-center gap-2">
           Ações Rápidas
@@ -44,7 +44,7 @@ export function QuickActions() {
             <Button
               key={index}
               variant="outline"
-              className={`${action.color} border-0 text-white h-16 flex-col gap-1 hover:scale-105 transition-all duration-200`}
+              className={`${action.color} border-0 text-white h-16 flex-col gap-1 hover:scale-105 transition-all duration-200 shadow-md`}
             >
               <action.icon className="w-5 h-5" />
               <div className="text-center">

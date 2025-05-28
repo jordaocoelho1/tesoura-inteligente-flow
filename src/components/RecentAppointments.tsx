@@ -49,7 +49,7 @@ export function RecentAppointments() {
   ];
 
   return (
-    <Card className="glass-card animate-fade-in">
+    <Card className="bg-barbershop-gray-800 border-barbershop-gray-700 animate-fade-in shadow-lg">
       <CardHeader>
         <CardTitle className="text-barbershop-gold flex items-center gap-2">
           <Calendar className="w-5 h-5" />
@@ -61,7 +61,7 @@ export function RecentAppointments() {
           {appointments.map((appointment) => (
             <div
               key={appointment.id}
-              className="flex items-center justify-between p-3 rounded-lg bg-barbershop-gray-900/50 hover:bg-barbershop-gray-800/50 transition-colors"
+              className="flex items-center justify-between p-3 rounded-lg bg-barbershop-gray-700 hover:bg-barbershop-gray-600 transition-colors"
             >
               <div className="flex items-center gap-3">
                 <Avatar className="h-10 w-10">
@@ -70,9 +70,9 @@ export function RecentAppointments() {
                   </AvatarFallback>
                 </Avatar>
                 <div>
-                  <p className="text-white font-medium">{appointment.client}</p>
-                  <p className="text-barbershop-gray-400 text-sm">{appointment.service}</p>
-                  <p className="text-barbershop-gray-500 text-xs">Com {appointment.barber}</p>
+                  <p className="text-barbershop-gold font-medium">{appointment.client}</p>
+                  <p className="text-barbershop-gray-300 text-sm">{appointment.service}</p>
+                  <p className="text-barbershop-gray-400 text-xs">Com {appointment.barber}</p>
                 </div>
               </div>
               <div className="text-right">
