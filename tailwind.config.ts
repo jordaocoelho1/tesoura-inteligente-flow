@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,23 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				barbershop: {
+					black: '#000000',
+					gold: '#D4AF37',
+					'gold-light': '#F4E4A6',
+					'gold-dark': '#B8941F',
+					gray: {
+						100: '#F5F5F5',
+						200: '#E5E5E5',
+						300: '#D4D4D4',
+						400: '#A3A3A3',
+						500: '#737373',
+						600: '#525252',
+						700: '#404040',
+						800: '#262626',
+						900: '#171717'
+					}
 				}
 			},
 			borderRadius: {
@@ -84,11 +102,36 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					from: {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					to: {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-in': {
+					from: {
+						transform: 'translateX(-100%)'
+					},
+					to: {
+						transform: 'translateX(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out',
+				'slide-in': 'slide-in 0.3s ease-out'
+			},
+			backgroundImage: {
+				'gradient-barbershop': 'linear-gradient(135deg, #000000 0%, #262626 50%, #D4AF37 100%)',
+				'gradient-gold': 'linear-gradient(135deg, #D4AF37 0%, #F4E4A6 50%, #B8941F 100%)',
+				'gradient-dark': 'linear-gradient(135deg, #171717 0%, #404040 100%)'
 			}
 		}
 	},
