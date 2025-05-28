@@ -48,7 +48,7 @@ export function AppSidebar() {
 
   const isActive = (path: string) => currentPath === path;
   const getNavCls = ({ isActive }: { isActive: boolean }) =>
-    `transition-all duration-200 ${
+    `transition-all duration-200 flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium ${
       isActive 
         ? "bg-barbershop-gold text-barbershop-black font-semibold shadow-lg" 
         : "text-barbershop-gray-100 hover:bg-barbershop-gray-800 hover:text-barbershop-gold"
@@ -85,16 +85,14 @@ export function AppSidebar() {
             <SidebarMenu className="space-y-1 px-2">
               {navigationItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
-                    <NavLink 
-                      to={item.url} 
-                      end 
-                      className={getNavCls}
-                    >
-                      <item.icon className={`${collapsed ? "mx-auto" : "mr-3"} h-5 w-5 flex-shrink-0`} />
-                      {!collapsed && <span className="truncate">{item.title}</span>}
-                    </NavLink>
-                  </SidebarMenuButton>
+                  <NavLink 
+                    to={item.url} 
+                    end 
+                    className={({ isActive }) => getNavCls({ isActive })}
+                  >
+                    <item.icon className={`${collapsed ? "mx-auto" : ""} h-5 w-5 flex-shrink-0`} />
+                    {!collapsed && <span className="truncate">{item.title}</span>}
+                  </NavLink>
                 </SidebarMenuItem>
               ))}
             </SidebarMenu>
