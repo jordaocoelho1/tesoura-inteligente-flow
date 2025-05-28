@@ -10,7 +10,9 @@ import {
   Settings,
   Home,
   Package,
-  Bell
+  Bell,
+  UserCheck,
+  ClipboardList
 } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 
@@ -30,6 +32,8 @@ import {
 const navigationItems = [
   { title: "Dashboard", url: "/", icon: Home },
   { title: "Agendamentos", url: "/agendamentos", icon: Calendar },
+  { title: "Área do Cliente", url: "/cliente", icon: UserCheck },
+  { title: "Área do Barbeiro", url: "/barbeiro", icon: ClipboardList },
   { title: "Clientes", url: "/clientes", icon: Users },
   { title: "Profissionais", url: "/profissionais", icon: User },
   { title: "Serviços", url: "/servicos", icon: Scissors },
