@@ -8,6 +8,14 @@ import Index from "./pages/Index";
 import Agendamentos from "./pages/Agendamentos";
 import Cliente from "./pages/Cliente";
 import Barbeiro from "./pages/Barbeiro";
+import Clientes from "./pages/Clientes";
+import Profissionais from "./pages/Profissionais";
+import Servicos from "./pages/Servicos";
+import Estoque from "./pages/Estoque";
+import Financeiro from "./pages/Financeiro";
+import Relatorios from "./pages/Relatorios";
+import Notificacoes from "./pages/Notificacoes";
+import Configuracoes from "./pages/Configuracoes";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
