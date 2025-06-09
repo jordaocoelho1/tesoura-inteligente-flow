@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import {
   Calendar,
@@ -13,7 +12,8 @@ import {
   Bell,
   UserCheck,
   ClipboardList,
-  CalendarCheck
+  CalendarCheck,
+  Tag
 } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 
@@ -34,6 +34,7 @@ const navigationItems = [
   { title: "Dashboard", url: "/", icon: Home },
   { title: "Agendamentos", url: "/agendamentos", icon: Calendar },
   { title: "Controle de Agendamentos", url: "/controle-agendamentos", icon: CalendarCheck },
+  { title: "Promoções", url: "/promocoes", icon: Tag },
   { title: "Área do Cliente", url: "/cliente", icon: UserCheck },
   { title: "Área do Barbeiro", url: "/barbeiro", icon: ClipboardList },
   { title: "Clientes", url: "/clientes", icon: Users },

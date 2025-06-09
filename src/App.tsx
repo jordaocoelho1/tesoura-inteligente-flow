@@ -17,6 +17,7 @@ import Notificacoes from "./pages/Notificacoes";
 import Configuracoes from "./pages/Configuracoes";
 import NotFound from "./pages/NotFound";
 import ControleAgendamentos from "./pages/ControleAgendamentos";
+import Promocoes from "./pages/Promocoes";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/agendamentos" element={<Agendamentos />} />
           <Route path="/controle-agendamentos" element={<ControleAgendamentos />} />
+          <Route path="/promocoes" element={<Promocoes />} />
           <Route path="/cliente" element={<Cliente />} />
           <Route path="/barbeiro" element={<Barbeiro />} />
           <Route path="/clientes" element={<Clientes />} />
