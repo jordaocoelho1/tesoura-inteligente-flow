@@ -15,7 +15,9 @@ import {
   ClipboardList,
   CalendarCheck,
   Tag,
-  CreditCard
+  CreditCard,
+  Star,
+  Receipt
 } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 
@@ -38,6 +40,8 @@ const navigationItems = [
   { title: "Controle de Agendamentos", url: "/controle-agendamentos", icon: CalendarCheck },
   { title: "Promoções", url: "/promocoes", icon: Tag },
   { title: "Assinaturas", url: "/assinaturas", icon: CreditCard },
+  { title: "Fidelidade", url: "/fidelidade", icon: Star },
+  { title: "Mensalidade", url: "/mensalidade", icon: Receipt },
   { title: "Área do Cliente", url: "/cliente", icon: UserCheck },
   { title: "Área do Barbeiro", url: "/barbeiro", icon: ClipboardList },
   { title: "Clientes", url: "/clientes", icon: Users },

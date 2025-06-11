@@ -20,6 +20,8 @@ import NotFound from "./pages/NotFound";
 import ControleAgendamentos from "./pages/ControleAgendamentos";
 import Promocoes from "./pages/Promocoes";
 import Assinaturas from "./pages/Assinaturas";
+import Fidelidade from "./pages/Fidelidade";
+import Mensalidade from "./pages/Mensalidade";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +37,8 @@ const App = () => (
           <Route path="/controle-agendamentos" element={<ControleAgendamentos />} />
           <Route path="/promocoes" element={<Promocoes />} />
           <Route path="/assinaturas" element={<Assinaturas />} />
+          <Route path="/fidelidade" element={<Fidelidade />} />
+          <Route path="/mensalidade" element={<Mensalidade />} />
           <Route path="/cliente" element={<Cliente />} />
           <Route path="/barbeiro" element={<Barbeiro />} />
           <Route path="/clientes" element={<Clientes />} />
