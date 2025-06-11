@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import {
   Calendar,
@@ -13,7 +14,8 @@ import {
   UserCheck,
   ClipboardList,
   CalendarCheck,
-  Tag
+  Tag,
+  CreditCard
 } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 
@@ -35,6 +37,7 @@ const navigationItems = [
   { title: "Agendamentos", url: "/agendamentos", icon: Calendar },
   { title: "Controle de Agendamentos", url: "/controle-agendamentos", icon: CalendarCheck },
   { title: "Promoções", url: "/promocoes", icon: Tag },
+  { title: "Assinaturas", url: "/assinaturas", icon: CreditCard },
   { title: "Área do Cliente", url: "/cliente", icon: UserCheck },
   { title: "Área do Barbeiro", url: "/barbeiro", icon: ClipboardList },
   { title: "Clientes", url: "/clientes", icon: Users },

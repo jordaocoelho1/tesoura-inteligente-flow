@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -18,6 +19,7 @@ import Configuracoes from "./pages/Configuracoes";
 import NotFound from "./pages/NotFound";
 import ControleAgendamentos from "./pages/ControleAgendamentos";
 import Promocoes from "./pages/Promocoes";
+import Assinaturas from "./pages/Assinaturas";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +34,7 @@ const App = () => (
           <Route path="/agendamentos" element={<Agendamentos />} />
           <Route path="/controle-agendamentos" element={<ControleAgendamentos />} />
           <Route path="/promocoes" element={<Promocoes />} />
+          <Route path="/assinaturas" element={<Assinaturas />} />
           <Route path="/cliente" element={<Cliente />} />
           <Route path="/barbeiro" element={<Barbeiro />} />
           <Route path="/clientes" element={<Clientes />} />
